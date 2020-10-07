@@ -4,4 +4,5 @@ public class Cucumber extends Product{
         super(price);
         megapack = true;
     }
+
 }

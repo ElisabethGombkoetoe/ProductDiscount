@@ -4,4 +4,5 @@ public class Chestnut extends Product {
         super(price);
         megapack = true;
     }
+
 }

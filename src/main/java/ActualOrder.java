@@ -1,16 +1,20 @@
-import java.util.HashMap;
-
 public class ActualOrder {
-    private Discount discount;
-    private Basket basket;
 
-    public ActualOrder(Discount discount, Basket basket) {
-        this.discount = discount;
+    Basket basket;
+
+
+    public ActualOrder(Basket basket) {
         this.basket = basket;
     }
 
-    public int calculaeBaskerise(){
-        return 0;
+    public int calculateBestPreis(){
+        Discount megaDiscount = new MegapackDiscount();
+        Discount buy3Pay2Discount = new Buy3Pay2Discount();
+        // TODO ezt megirni
+    return 0;
+    }
 
+    public Basket getBasket() {
+        return basket;
     }
 }

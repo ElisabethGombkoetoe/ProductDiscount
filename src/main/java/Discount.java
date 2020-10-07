@@ -1,5 +1,5 @@
 public interface Discount {
 
-    public int calclateDiscont(ActualOrder order);
+    public int calculateDiscount(Basket basket);
 
 }
