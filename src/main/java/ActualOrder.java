@@ -13,7 +13,6 @@ public class ActualOrder {
         // TODO ezt megirni
     return 0;
     }
-
     public Basket getBasket() {
         return basket;
     }
