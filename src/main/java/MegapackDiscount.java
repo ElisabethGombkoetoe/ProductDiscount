@@ -23,15 +23,17 @@ public class MegapackDiscount implements Discount{
         int numberOfComplettMegapacks = 0;
 
         for (Product p : products){
-          if(p instanceof Cucumber){
-              actualNumberOfCucumber = actualNumberOfCucumber ++;
-              numberOfComplettMegapacks = numberOfComplettMegapacks +(actualNumberOfCucumber / megapackSize);
-          }
-          if(p instanceof Chestnut){
-              actualNumberOfChestnut = actualNumberOfChestnut ++;
-              numberOfComplettMegapacks = numberOfComplettMegapacks +(actualNumberOfChestnut / megapackSize);
-          }
-      }
+            if(p.isMegapack()) {
+                if (p instanceof Cucumber) {
+                    actualNumberOfCucumber = actualNumberOfCucumber++;
+                    numberOfComplettMegapacks = numberOfComplettMegapacks + (actualNumberOfCucumber / megapackSize);
+                }
+                if (p instanceof Chestnut) {
+                    actualNumberOfChestnut = actualNumberOfChestnut++;
+                    numberOfComplettMegapacks = numberOfComplettMegapacks + (actualNumberOfChestnut / megapackSize);
+                }
+            }
+        }
 
         return numberOfComplettMegapacks * discount;
     }

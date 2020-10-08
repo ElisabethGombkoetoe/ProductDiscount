@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Buy3Pay2Discount implements Discount {
@@ -25,7 +24,7 @@ public class Buy3Pay2Discount implements Discount {
 
 
         for (Product p : products){
-            if(p instanceof RuberDuck){
+            if(p instanceof RubberDuck){
                 actualNumberOfRuberDuck =  actualNumberOfRuberDuck ++;
                 if(actualNumberOfRuberDuck == 3){
                    ruberDuckDiscount = ruberDuckDiscount + ( numberOfDiscountAmount * p.getPrice());
